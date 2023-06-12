@@ -1,15 +1,20 @@
 {
   "name": "npm-css-utilities",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "dummy module",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": {
-    "name": "Alex Ortega",
-    "email": "mortegalex27@outlook.es"
-},
-  "license": "ISC"
+  "author": "Alex Ortega <mortegalex27@outlook.es>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ortega-alex/npm-css-utilities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ortega-alex/npm-css-utilities/issues"
+  },
+  "homepage": "https://github.com/ortega-alex/npm-css-utilities#readme"
 }
