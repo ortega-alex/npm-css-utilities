@@ -1,4 +1,4 @@
-const noDpiIsValid = no_dpi => {
+export const noDpiIsValid = no_dpi => {
     if (!no_dpi || String(no_dpi).trim() === '') return 'CUI vacío';
     const cuiRegExp = /^[0-9]{4}\s?[0-9]{5}\s?[0-9]{4}$/;
 
@@ -50,7 +50,7 @@ const noDpiIsValid = no_dpi => {
     return !(modulo === verificador) ? 'No valido' : null;
 };
 
- const nitIsValid = no_nit => {
+export const nitIsValid = no_nit => {
     if (!no_nit || String(no_nit).trim() === '') return 'NIT vacío';
 
     const nitRegExp = /^[0-9]+(-?[0-9kK])?$/;
@@ -78,14 +78,14 @@ const noDpiIsValid = no_dpi => {
     return expectedCheker === computedChecker ? null : 'NIT Inválido.';
 };
 
- const mailIsValied = mail => {
+export const mailIsValied = mail => {
     if (!mail || String(mail).trim() === '') return 'Correo vacío';
     const emailRegExp = /^(([^<>()[\],;:\s@"]+(\.[^<>()[\],;:\s@"]+)*)|(".+"))@(([^<>()[\],;:\s@"]+\.)+[^<>()[\],;:\s@"]{2,})$/;
     if (!emailRegExp.test(mail.trim())) return 'Correo no valido.';
     return null;
 };
 
- const passwordIsValid = (password, currentPass) => {
+export const passwordIsValid = (password, currentPass) => {
     if (!password || String(password).trim() === '') return 'Contraseña vacío';
     const passRegExp = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
     if (password.length < 6) return 'La contraseña debe tener al menos 6 caracteres';
@@ -95,26 +95,16 @@ const noDpiIsValid = no_dpi => {
     return null;
 };
 
- const phoneNumberIsValid = number => {
+export const phoneNumberIsValid = number => {
     if (!number || String(number).trim() === '') return 'Número de teléfono vacio';
     const phoneNumberRegExp = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{2,6}$/im;
     if (!phoneNumberRegExp.test(number)) return 'Número de teléfono no es valido';
     return null;
 };
 
- const onlyNumbers = number => {
+export const onlyNumbers = number => {
     if (!number || String(number).trim() === '') return 'Campo vacio';
     const onlyNumbersRegExp = /^[\d,.]+$/;
     if (!onlyNumbersRegExp.test(number)) return 'Ingrese unicamente cifras numericas';
     return null;
 };
-
-
-module.exports = {
-    noDpiIsValid,
-    nitIsValid,
-    mailIsValied,
-    passwordIsValid,
-    phoneNumberIsValid,
-    onlyNumbers
-}

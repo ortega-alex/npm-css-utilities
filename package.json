@@ -1,9 +1,12 @@
 {
   "name": "npm-css-utilities",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "dummy module",
   "main": "src/index.js",
   "scripts": {
+    "dev": "nodemon -L --exec npx babel-node src/app.js",
+    "format": "prettier -w .",
+    "lint": "eslint --fix . --ext .js,.jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/ortega-alex/npm-css-utilities/issues"
   },
-  "homepage": "https://github.com/ortega-alex/npm-css-utilities#readme"
+  "homepage": "https://github.com/ortega-alex/npm-css-utilities#readme",
+  "devDependencies": {
+    "@babel/cli": "7.22.5",
+    "@babel/core": "7.22.5",
+    "@babel/node": "7.22.5",
+    "@babel/plugin-transform-runtime": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "@babel/runtime": "7.22.5",
+    "eslint": "8.42.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "16.0.0",
+    "eslint-plugin-promise": "6.1.1",
+    "nodemon": "2.0.22",
+    "prettier": "2.8.8"
+  }
 }

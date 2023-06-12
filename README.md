@@ -1,1 +1,2 @@
 # npm-css-utilities
+<p>un framework CSS personalizado con validación de DPI, NIT y números de teléfono. Simplifica el desarrollo web y agrega características avanzadas de manera sencilla. Ahorra tiempo y esfuerzo en tus proyectos.</p>
