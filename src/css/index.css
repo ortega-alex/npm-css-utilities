@@ -1770,12 +1770,12 @@ body {
     flex: 1;
 }
 
-.d-flex {
+.flex {
     display: -ms-flexbox !important;
     display: flex !important;
 }
 
-.d-inline-flex {
+.flex-inline {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
 }
@@ -1792,82 +1792,82 @@ body {
     flex-direction: column !important;
 }
 
-.justify-content-start {
+.justify-start {
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
 }
 
-.justify-content-end {
+.justify-end {
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
 }
 
-.justify-content-center {
+.justify-center {
     -ms-flex-pack: center !important;
     justify-content: center !important;
 }
 
-.justify-content-between {
+.justify-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
 }
 
-.justify-content-around {
+.justify-around {
     -ms-flex-pack: distribute !important;
     justify-content: space-around !important;
 }
 
-.align-items-start {
+.items-start {
     -ms-flex-align: start !important;
     align-items: flex-start !important;
 }
 
-.align-items-end {
+.items-end {
     -ms-flex-align: end !important;
     align-items: flex-end !important;
 }
 
-.align-items-center {
+.items-center {
     -ms-flex-align: center !important;
     align-items: center !important;
 }
 
-.align-items-baseline {
+.items-baseline {
     -ms-flex-align: baseline !important;
     align-items: baseline !important;
 }
 
-.align-items-stretch {
+.items-stretch {
     -ms-flex-align: stretch !important;
     align-items: stretch !important;
 }
 
-.align-content-start {
+.content-start {
     -ms-flex-line-pack: start !important;
     align-content: flex-start !important;
 }
 
-.align-content-end {
+.content-end {
     -ms-flex-line-pack: end !important;
     align-content: flex-end !important;
 }
 
-.align-content-center {
+.content-center {
     -ms-flex-line-pack: center !important;
     align-content: center !important;
 }
 
-.align-content-between {
+.content-between {
     -ms-flex-line-pack: justify !important;
     align-content: space-between !important;
 }
 
-.align-content-around {
+.content-around {
     -ms-flex-line-pack: distribute !important;
     align-content: space-around !important;
 }
 
-.align-content-stretch {
+.content-stretch {
     -ms-flex-line-pack: stretch !important;
     align-content: stretch !important;
 }
