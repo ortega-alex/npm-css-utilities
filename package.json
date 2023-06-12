@@ -1,0 +1,15 @@
+{
+  "name": "npm-css-utilities",
+  "version": "1.0.0",
+  "description": "dummy module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alex Ortega",
+    "email": "mortegalex27@outlook.es"
+},
+  "license": "ISC"
+}
