@@ -124,8 +124,52 @@ body {
     width: auto !important;
 }
 
-.border-red {
-    border: solid 1px var(--danger) !important;
+.border-primary {
+    border: solid var(--primary) 1px;
+}
+
+.border-primary-light {
+    border: solid var(--primary-light) 1px;
+}
+
+.border-primary-dark {
+    border: solid var(--primary-dark) 1px;
+}
+
+.border-secondary {
+    border: solid var(--secondary) 1px;
+}
+
+.border-secondary-light {
+    border: solid var(--secondary-light) 1px;
+}
+
+.border-secondary-dark {
+    border: solid var(--secondary-dark) 1px;
+}
+
+.border-success {
+    border: solid var(--success) 1px;
+}
+
+.border-success-light {
+    border: solid var(--success-light) 1px;
+}
+
+.border-success-dark {
+    border: solid var(--success-dark) 1px;
+}
+
+.border-warning {
+    border: solid var(--warning) 1px;
+}
+
+.border-warning-light {
+    border: solid var(--warning-light) 1px;
+}
+
+.border-warning-dark {
+    border: solid var(--warning-dark) 1px;
 }
 
 .rounded-sm {
@@ -150,6 +194,18 @@ body {
 
 .rounded-0 {
     border-radius: 0 !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1), 0 2px 4px -1px rgb(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1), 0 4px 6px -4px rgb(0, 0, 0, 0.1);
 }
 
 .notification-item {
@@ -197,13 +253,6 @@ body {
     width: 16px;
     border: solid px var(--primary);
     border-radius: 50%;
-}
-
-.border-warning {
-    color: var(--warning) !important;
-    background-color: transparent;
-    border-color: var(--warning) !important;
-    box-shadow: none;
 }
 
 .hide {
@@ -1544,16 +1593,16 @@ body {
     height: 75% !important;
 }
 
-.h-100 {
-    height: 100% !important;
-}
-
 .h-85 {
     height: 85% !important;
 }
 
-.mh-85 {
-    min-height: 85% !important;
+.h-100 {
+    height: 100% !important;
+}
+
+.h-auto {
+    height: auto !important;
 }
 
 .vh-50 {
@@ -1562,10 +1611,6 @@ body {
 
 .vh-65 {
     height: 65vh !important;
-}
-
-.mvh-65 {
-    max-height: 65vh !important;
 }
 
 .vh-85 {
@@ -1580,8 +1625,12 @@ body {
     height: 100vh !important;
 }
 
-.h-auto {
-    height: auto !important;
+.mvh-65 {
+    max-height: 65vh !important;
+}
+
+.mh-85 {
+    min-height: 85% !important;
 }
 
 .overflow-y {
@@ -1987,7 +2036,19 @@ body {
     align-content: stretch !important;
 }
 
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
 .gap-3 {
+    gap: 0.75rem;
+}
+
+.gap-4 {
     gap: 1rem;
 }
 

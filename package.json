@@ -1,6 +1,6 @@
 {
   "name": "npm-css-utilities",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "dummy module",
   "main": "src/index.js",
   "scripts": {
