@@ -1,8 +1,8 @@
 {
   "name": "npm-css-utilities",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "dummy module",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon -L --exec npx babel-node src/app.js",
     "build": "babel src -d dist",
