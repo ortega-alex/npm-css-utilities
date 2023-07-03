@@ -17,5 +17,6 @@ export const colors = {
     dangerLight: '#ff6b70',
     white: '#f8f9fa',
     whiteDark: '#c5c6c7',
-    whiteLight: '#ffffff'
+    whiteLight: '#ffffff',
+    purple: '#ab47bc'
 };
