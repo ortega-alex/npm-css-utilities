@@ -35,6 +35,14 @@ export const replaceAllUnderscoresWithWhileSpace = text => text.replace(/_/gi, '
  * @returns {String}
  */
 export const getExtension = fileNamme => /[^.]+$/.exec(fileNamme)[0];
+
+/**
+ *
+ * @param {Object} a
+ * @param {Object} b
+ * @param {String} name
+ * @returns
+ */
 export const orderArrayByName = (a, b, name) => {
     if (a[name] < b[name]) return -1;
     if (a[name] > b[name]) return 1;

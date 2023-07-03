@@ -22,6 +22,7 @@
     --white: #f8f9fa;
     --white-dark: #c5c6c7;
     --white-light: #ffffff;
+    --purple: #ab47bc;
 }
 
 body {
@@ -188,6 +189,110 @@ body {
     border: dashed var(--warning) 1px;
 }
 
+.border-danger {
+    border: solid var(--danger) 1px;
+}
+
+.border-danger-light {
+    border: solid var(--danger-light) 1px;
+}
+
+.border-danger-dark {
+    border: solid var(--danger-dark) 1px;
+}
+
+.border-danger-dashed {
+    border: dashed var(--danger) 1px;
+}
+
+.border-white {
+    border: solid var(--white) 1px;
+}
+
+.border-white-light {
+    border: solid var(--white-light) 1px;
+}
+
+.border-white-dark {
+    border: solid var(--white-dark) 1px;
+}
+
+.border-white-dashed {
+    border: dashed var(--white) 1px;
+}
+
+.border-bottom-primary {
+    border-bottom: solid var(--primary) 1px;
+}
+
+.border-bottom-primary-light {
+    border-bottom: solid var(--primary-light) 1px;
+}
+
+.border-bottom-primary-dark {
+    border-bottom: solid var(--primary-dark) 1px;
+}
+
+.border-bottom-secondary {
+    border-bottom: solid var(--secondary) 1px;
+}
+
+.border-bottom-secondary-light {
+    border-bottom: solid var(--secondary-light) 1px;
+}
+
+.border-bottom-secondary-dark {
+    border-bottom: solid var(--secondary-dark) 1px;
+}
+
+.border-bottom-success {
+    border-bottom: solid var(--success) 1px;
+}
+
+.border-bottom-success-light {
+    border-bottom: solid var(--success-light) 1px;
+}
+
+.border-bottom-success-dark {
+    border-bottom: solid var(--success-dark) 1px;
+}
+
+.border-bottom-warning {
+    border-bottom: solid var(--warning) 1px;
+}
+
+.border-bottom-warning-light {
+    border-bottom: solid var(--warning-light) 1px;
+}
+
+.border-bottom-warning-dark {
+    border-bottom: solid var(--warning-dark) 1px;
+}
+
+.border-bottom-danger {
+    border-bottom: solid var(--danger) 1px;
+}
+
+.border-bottom-danger-light {
+    border-bottom: solid var(--danger-light) 1px;
+}
+
+.border-bottom-danger-dark {
+    border-bottom: solid var(--danger-dark) 1px;
+}
+
+.border-bottom-white {
+    border-bottom: solid var(--white) 1px;
+}
+
+.border-bottom-white-light {
+    border-bottom: solid var(--white-light) 1px;
+}
+
+.border-bottom-white-dark {
+    border-bottom: solid var(--white-dark) 1px;
+}
+
 .rounded-sm {
     border-radius: 0.2rem !important;
 }
@@ -245,17 +350,6 @@ body {
 
 .ant-upload {
     width: 100%;
-}
-
-.ant-modal-close-icon {
-    background: var(--primary);
-    color: var(--white);
-    height: 32px;
-    width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
 }
 
 .line-divide {
@@ -431,7 +525,7 @@ body {
     background: var(--primary) !important;
 }
 
-.bg-primary-light-dark {
+.bg-primary-dark {
     background: var(--primary-dark) !important;
 }
 
@@ -443,7 +537,7 @@ body {
     background: var(--secondary) !important;
 }
 
-.bg-secondary-light-dark {
+.bg-secondary-dark {
     background: var(--secondary-dark) !important;
 }
 
@@ -1573,15 +1667,24 @@ body {
     width: 25% !important;
 }
 
+.w-33 {
+    width: 33.333333% !important;
+}
+
 .w-50 {
     width: 50% !important;
+}
+
+.w-66 {
+    width: 66.666667% !important;
 }
 
 .w-75 {
     width: 75% !important;
 }
 
-.w-100 {
+.w-100,
+.w-full {
     width: 100% !important;
 }
 
@@ -1593,12 +1696,25 @@ body {
     min-width: 200px;
 }
 
+.mw-50 {
+    min-width: 50% !important;
+}
+
+.mw-100,
+.min-w-full {
+    min-width: 100% !important;
+}
+
 .h-container {
     height: calc(100vh - 92px) !important;
 }
 
 .h-25 {
     height: 25% !important;
+}
+
+.h-33 {
+    height: 33.333333% !important;
 }
 
 .h-50 {
@@ -1609,11 +1725,16 @@ body {
     height: 75% !important;
 }
 
+.w-66 {
+    height: 66.666667% !important;
+}
+
 .h-85 {
     height: 85% !important;
 }
 
-.h-100 {
+.h-100,
+.h-full {
     height: 100% !important;
 }
 
@@ -1621,20 +1742,28 @@ body {
     height: auto !important;
 }
 
+.vh-25 {
+    height: 25vh !important;
+}
+
+.vh-33 {
+    height: 33.333333vh !important;
+}
+
 .vh-50 {
     height: 50vh !important;
 }
 
-.vh-65 {
-    height: 65vh !important;
-}
-
-.vh-85 {
-    height: 85vh !important;
+.vh-66 {
+    height: 66.666667vh !important;
 }
 
 .vh-75 {
     height: 75vh !important;
+}
+
+.vh-85 {
+    height: 85vh !important;
 }
 
 .vh-100 {
@@ -1643,6 +1772,10 @@ body {
 
 .mvh-65 {
     max-height: 65vh !important;
+}
+
+.vh-75 {
+    height: 75vh !important;
 }
 
 .mh-85 {
