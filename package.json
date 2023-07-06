@@ -1,13 +1,13 @@
 {
   "name": "npm-css-utilities",
-  "version": "5.2.1",
+  "version": "6.1.2",
   "description": "dummy module",
-  "main": "dist/index.js",
+  "main": "dist/index.ts",
   "scripts": {
-    "dev": "nodemon -L --exec npx babel-node src/app.js",
-    "build": "babel src -d dist",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/app.js\"",
+    "build": "rm -rf ./dist && mkdir dist && cp -r src/* dist/ && rm dist/app.ts dist/index.html",
     "format": "prettier -w .",
-    "lint": "eslint --fix . --ext .js,.jsx",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -25,20 +25,18 @@
   },
   "homepage": "https://github.com/ortega-alex/npm-css-utilities#readme",
   "devDependencies": {
-    "@babel/cli": "7.22.5",
-    "@babel/core": "7.22.5",
-    "@babel/node": "7.22.5",
-    "@babel/plugin-transform-runtime": "7.22.5",
-    "@babel/preset-env": "7.22.5",
-    "@babel/runtime": "7.22.5",
-    "eslint": "8.42.0",
+    "@typescript-eslint/eslint-plugin": "5.61.0",
+    "@typescript-eslint/parser": "5.61.0",
+    "concurrently": "8.2.0",
+    "eslint": "8.44.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-n": "16.0.0",
+    "eslint-plugin-n": "16.0.1",
     "eslint-plugin-promise": "6.1.1",
     "nodemon": "2.0.22",
-    "prettier": "2.8.8"
+    "prettier": "2.8.8",
+    "typescript": "5.1.6"
   },
   "dependencies": {
     "dayjs": "1.11.8"

@@ -4,3 +4,4 @@
 .prettierignore
 .prettierrc
 dist
+dist-tsc

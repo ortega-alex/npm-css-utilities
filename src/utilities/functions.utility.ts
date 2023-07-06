@@ -3,7 +3,7 @@
  * @param {String} text
  * @returns {Promise}
  */
-export const copyToClipboard = text => {
+export const copyToClipboard = (text: string): Promise<void> => {
     // navigator clipboard api needs a secure context (https)
     if (navigator.clipboard && window.isSecureContext) {
         // navigator clipboard api method'
@@ -20,9 +20,14 @@ export const copyToClipboard = text => {
         textArea.focus();
         textArea.select();
         return new Promise((resolve, reject) => {
-            // here the magic happens
-            navigator.clipboard.writeText('Texto copiado') ? resolve() : reject(new Error('Error al copiar el contenido'));
-            textArea.remove();
+            try {
+                // here the magic happens
+                navigator.clipboard.writeText('Texto copiado');
+                resolve();
+                textArea.remove();
+            } catch (error) {
+                reject(new Error('Error al copiar el contenido'));
+            }
         });
     }
 };
@@ -32,7 +37,7 @@ export const copyToClipboard = text => {
  * @param {Blob} httpResTypeBlob
  * @param {String} name
  */
-export const downloadFile = (httpResTypeBlob, name) => {
+export const downloadFile = (httpResTypeBlob: Blob, name: string): void => {
     const url = window.URL.createObjectURL(new Blob([httpResTypeBlob]));
     const link = document.createElement('a');
     link.href = url;
@@ -45,7 +50,7 @@ export const downloadFile = (httpResTypeBlob, name) => {
  * Allows you to download a file via url
  * @param {String} url
  */
-export const downloadFileByUrl = url => {
+export const downloadFileByUrl = (url: string): void => {
     const link = document.createElement('a');
     link.href = url;
     link.setAttribute('target', '_blank');

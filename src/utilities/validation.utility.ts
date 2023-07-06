@@ -3,7 +3,7 @@
  * @param {String} no_dpi
  * @returns {String}
  */
-export const noDpiIsValid = no_dpi => {
+export const noDpiIsValid = (no_dpi: string): string | null => {
     if (!no_dpi || String(no_dpi).trim() === '') return 'CUI vacío';
     const cuiRegExp = /^[0-9]{4}\s?[0-9]{5}\s?[0-9]{4}$/;
 
@@ -48,7 +48,7 @@ export const noDpiIsValid = no_dpi => {
     // en el algoritmo del complemento 11.
     let total = 0;
     for (let i = 0; i < numero.length; i++) {
-        total += numero[i] * (i + 2);
+        total += Number(numero[i]) * (i + 2);
     }
 
     const modulo = total % 11;
@@ -60,7 +60,7 @@ export const noDpiIsValid = no_dpi => {
  * @param {Number} no_nit
  * @returns {String}
  */
-export const nitIsValid = no_nit => {
+export const nitIsValid = (no_nit: string): string | null => {
     if (!no_nit || String(no_nit).trim() === '') return 'NIT vacío';
 
     const nitRegExp = /^[0-9]+(-?[0-9kK])?$/;
@@ -93,7 +93,7 @@ export const nitIsValid = no_nit => {
  * @param {String} mail
  * @returns {String}
  */
-export const mailIsValied = mail => {
+export const mailIsValied = (mail: string): string | null => {
     if (!mail || String(mail).trim() === '') return 'Correo vacío';
     const emailRegExp = /^(([^<>()[\],;:\s@"]+(\.[^<>()[\],;:\s@"]+)*)|(".+"))@(([^<>()[\],;:\s@"]+\.)+[^<>()[\],;:\s@"]{2,})$/;
     if (!emailRegExp.test(mail.trim())) return 'Correo no valido.';
@@ -106,7 +106,7 @@ export const mailIsValied = mail => {
  * @param {String} currentPass
  * @returns {String}
  */
-export const passwordIsValid = (password, currentPass = null) => {
+export const passwordIsValid = (password: string, currentPass?: string): string | null => {
     if (!password || String(password).trim() === '') return 'Contraseña vacío';
     const passRegExp = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
     if (password.length < 6) return 'La contraseña debe tener al menos 6 caracteres';
@@ -121,7 +121,7 @@ export const passwordIsValid = (password, currentPass = null) => {
  * @param {String} number
  * @returns {String}
  */
-export const phoneNumberIsValid = number => {
+export const phoneNumberIsValid = (number: string): string | null => {
     if (!number || String(number).trim() === '') return 'Número de teléfono vacio';
     const phoneNumberRegExp = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{2,6}$/im;
     if (!phoneNumberRegExp.test(number)) return 'Número de teléfono no es valido';
@@ -133,9 +133,9 @@ export const phoneNumberIsValid = number => {
  * @param {String | Number} number
  * @returns
  */
-export const onlyNumbers = number => {
+export const onlyNumbers = (number: string | number): string | null => {
     if (!number || String(number).trim() === '') return 'Campo vacio';
     const onlyNumbersRegExp = /^[\d,.]+$/;
-    if (!onlyNumbersRegExp.test(number)) return 'Ingrese unicamente cifras numericas';
+    if (!onlyNumbersRegExp.test(String(number))) return 'Ingrese unicamente cifras numericas';
     return null;
 };

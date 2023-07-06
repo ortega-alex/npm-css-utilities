@@ -1,4 +1,6 @@
-export const colors = {
+import { Colors } from '../interface';
+
+export const colors: Colors = {
     primary: '#204387',
     primaryDark: '#001d59',
     primaryLight: '#566eb7',
@@ -6,7 +8,7 @@ export const colors = {
     secondaryDark: '#000000',
     secondaryLight: '#484848',
     success: '#28a745',
-    successDark: ' #007717',
+    successDark: '#007717',
     successLight: '#64da73',
     successLightOpacity: '#64da734c',
     warning: '#ffc107',

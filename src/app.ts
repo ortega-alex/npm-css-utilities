@@ -10,14 +10,19 @@ import {
     getExtension,
     getNow,
     getNowFormat,
+    mailIsValied,
+    nitIsValid,
+    noDpiIsValid,
+    onlyNumbers,
+    passwordIsValid,
+    phoneNumberIsValid,
     replaceAccents,
     replaceAllUnderscoresWithWhileSpace,
     replaceWhiteSpaceByCharacter
-} from './utilities/format.utility';
-import { mailIsValied, nitIsValid, noDpiIsValid, onlyNumbers, passwordIsValid, phoneNumberIsValid } from './utilities/validation.utility';
+} from './utilities';
 
 // validations
-const dpi = 2320556340103;
+const dpi = '2320556340103';
 const mail = 'maimail.com';
 console.log('VALIDATIONS');
 console.log('Error:', noDpiIsValid(dpi));
