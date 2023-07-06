@@ -1,6 +1,6 @@
 {
   "name": "npm-css-utilities",
-  "version": "5.1.1",
+  "version": "5.2.1",
   "description": "dummy module",
   "main": "dist/index.js",
   "scripts": {
@@ -8,8 +8,7 @@
     "build": "babel src -d dist",
     "format": "prettier -w .",
     "lint": "eslint --fix . --ext .js,.jsx",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist"
@@ -32,7 +31,6 @@
     "@babel/plugin-transform-runtime": "7.22.5",
     "@babel/preset-env": "7.22.5",
     "@babel/runtime": "7.22.5",
-    "copy-webpack-plugin": "^11.0.0",
     "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-config-standard": "17.1.0",
@@ -40,8 +38,7 @@
     "eslint-plugin-n": "16.0.0",
     "eslint-plugin-promise": "6.1.1",
     "nodemon": "2.0.22",
-    "prettier": "2.8.8",
-    "webpack-cli": "^5.1.4"
+    "prettier": "2.8.8"
   },
   "dependencies": {
     "dayjs": "1.11.8"
