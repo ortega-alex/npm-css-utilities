@@ -22,5 +22,7 @@ export const sessionAdapter = (values: Login): Sesion => ({
     puesto: values?.puesto,
     abreviatura: String(values.nombre_corto).substring(0, 2).toUpperCase(),
     extension: values?.extension,
-    supervisor: values?.supervisor
+    supervisor: values?.supervisor,
+    usuario_externo: values?.usuario_externo,
+    telefono_externo: values?.telefono_externo
 });

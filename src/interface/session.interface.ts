@@ -15,6 +15,8 @@ export interface User {
     abreviatura: string;
     extension?: string;
     supervisor?: string;
+    usuario_externo?: string;
+    telefono_externo?: string;
 }
 
 export interface Sesion extends User {
