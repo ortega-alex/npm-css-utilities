@@ -10,6 +10,7 @@ import {
     getExtension,
     getNow,
     getNowFormat,
+    getWeekDates,
     mailIsValied,
     nitIsValid,
     noDpiIsValid,
@@ -55,3 +56,4 @@ console.log(addTime);
 console.log(durationInDaysBetweenDate(now, addTime));
 console.log(durationInDaysBetweenDateHumanize(addTime));
 console.log('\n');
+console.log(getWeekDates(dateString));

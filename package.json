@@ -1,10 +1,10 @@
 {
   "name": "npm-css-utilities",
-  "version": "6.1.5",
+  "version": "6.1.6",
   "description": "dummy module",
   "main": "dist/index.ts",
   "scripts": {
-    "dev": "concurrently \"tsc -w\" \"nodemon dist/app.js\"",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist-tsc/app.js\"",
     "build": "rm -rf ./dist && mkdir dist && cp -r src/* dist/ && rm dist/app.ts dist/index.html",
     "format": "prettier -w .",
     "lint": "eslint \"**/*.{ts,tsx}\"",

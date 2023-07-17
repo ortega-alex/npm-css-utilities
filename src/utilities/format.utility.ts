@@ -139,3 +139,22 @@ export const durationInDaysBetweenDate = (starDate?: Dayjs, endDate?: Dayjs): st
  */
 export const durationInDaysBetweenDateHumanize = (starDate?: Dayjs, endDate?: Dayjs): string =>
     dayjs.duration(dayjs(endDate ?? undefined).diff(starDate ?? undefined)).humanize();
+
+/**
+ *
+ * @param {string} date
+ * @returns {Array<string>}
+ */
+export const getWeekDates = (date: string): Array<string> => {
+    const startOfWeek: Dayjs = dayjs(date, 'YYYY-MM-DD').startOf('week');
+    const endOfWeek: Dayjs = startOfWeek.endOf('week');
+    const dates: Array<string> = [];
+
+    let currentDate = startOfWeek;
+    while (currentDate <= endOfWeek) {
+        if (currentDate.day() !== 0) dates.push(currentDate.format('YYYY-MM-DD'));
+        currentDate = currentDate.add(1, 'day');
+    }
+
+    return dates;
+};
