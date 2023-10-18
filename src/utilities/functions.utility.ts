@@ -22,10 +22,12 @@ export const copyToClipboard = (text: string): Promise<void> => {
         return new Promise((resolve, reject) => {
             try {
                 // here the magic happens
-                navigator.clipboard.writeText('Texto copiado');
+                // navigator.clipboard.writeText('Texto copiado');
+                document.execCommand('copy');
                 resolve();
                 textArea.remove();
             } catch (error) {
+                console.error(error);
                 reject(new Error('Error al copiar el contenido'));
             }
         });
