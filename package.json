@@ -1,6 +1,6 @@
 {
   "name": "npm-css-utilities",
-  "version": "6.1.9",
+  "version": "6.1.10",
   "description": "dummy module",
   "main": "dist/index.ts",
   "scripts": {

@@ -131,7 +131,7 @@ export const getDdiffBetweenTwoDate = (starDate?: Dayjs, endDate?: Dayjs, type?:
  * @param {String} param days, moths, yeas
  * @returns {Date}
  */
-export const addTimeToADate = (date: Dayjs, amount: number, param?: 'days' | 'years' | 'months') =>
+export const addTimeToADate = (date: Dayjs, amount: number, param?: 'days' | 'years' | 'months' | 'minutes' | 'seconds') =>
     dayjs(date, 'DD/MM/YYYY').add(amount, param || 'days');
 
 /**
