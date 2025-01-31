@@ -1633,7 +1633,7 @@ body {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 5px 1rem;
 }
 
 .navbar-dark {
@@ -1706,7 +1706,7 @@ body {
 }
 
 .h-container {
-    height: calc(100vh - 92px) !important;
+    height: calc(100vh - 55px) !important;
 }
 
 .h-25 {
